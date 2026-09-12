@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gundapuneni Ganesh - Senior Frontend Engineer & UI/UX Specialist. Available for corporate roles, enterprise consulting, and innovative web projects.">
+    <title>Contact & Inquiries | Gundapuneni Ganesh</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Enterprise Design System Stylesheet & Page Transitions -->
+    <link rel="stylesheet" href="one.css">
+    <script src="transitions.js" defer></script>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         STICKY NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="brand-logo" aria-label="Ganesh Portfolio Home">
+                <div class="brand-badge">GG</div>
+                <div class="brand-text">Ganesh<span>.dev</span></div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="mobile-resume-item"><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="nav-link" style="color: var(--accent-cyan);"><i class="fas fa-file-download"></i> Download Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-outline btn-sm resume-nav-btn" title="Download Official Resume (PDF)"><i class="fas fa-file-download"></i> <span>Resume</span></a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Let's Connect</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             CONTACT HEADER
+             ========================================================================== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Communication Channel</div>
+                    <h1 class="section-title">Initiate a <span>Professional Collaboration</span></h1>
+                    <p class="section-subtitle">
+                        Whether you are looking to hire a dedicated Frontend Engineer, discuss an enterprise UI/UX consulting project, or just say hello—I look forward to hearing from you.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Direct Channels & Credentials -->
+                    <div class="contact-info-panel">
+                        <!-- Profile Card -->
+                        <div class="about-card" style="padding: 28px; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 16px;">
+                                <div style="width: 70px; height: 70px; border-radius: 50%; padding: 3px; background: var(--gradient-primary); flex-shrink: 0;">
+                                    <img src="profile-executive.png" alt="Gundapuneni Ganesh" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 15%;">
+                                </div>
+                                <div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">Gundapuneni Ganesh</h3>
+                                    <div style="color: var(--accent-cyan); font-size: 0.9rem; font-weight: 600;">SAP ABAP Developer &bull; CIET College Trainer &bull; Frontend Engineer</div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 16px; margin-bottom: 0; line-height: 1.6;">
+                                Available for enterprise SAP ABAP engineering roles, technical training workshops, and modern frontend application development.
+                            </p>
+                        </div>
+
+                        <!-- Resume / Curriculum Vitae Card -->
+                        <div class="contact-detail-card" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.06);">
+                            <div class="contact-icon-box" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.15);"><i class="fas fa-file-pdf"></i></div>
+                            <div style="flex-grow: 1;">
+                                <div class="contact-meta-label">Curriculum Vitae</div>
+                                <div class="contact-meta-value">Gundapuneni Ganesh Resume</div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">SAP ABAP Developer &bull; Certified 2026 (PDF)</div>
+                            </div>
+                            <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-primary btn-sm" title="Download Official Resume (PDF)" style="padding: 8px 18px;">
+                                <i class="fas fa-file-download"></i>
+                                <span>Download</span>
+                            </a>
+                        </div>
+
+                        <!-- Email Detail -->
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                            <div style="flex-grow: 1;">
+                                <div class="contact-meta-label">Direct Email</div>
+                                <div class="contact-meta-value">
+                                    <a href="mailto:gundapuneniganesh321@gmail.com">gundapuneniganesh321@gmail.com</a>
+                                </div>
+                            </div>
+                            <button onclick="copyToClipboard('gundapuneniganesh321@gmail.com', this)" class="btn btn-outline btn-sm" title="Copy Email" style="padding: 6px 12px;">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone / WhatsApp Detail -->
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
+                            <div style="flex-grow: 1;">
+                                <div class="contact-meta-label">Mobile & WhatsApp</div>
+                                <div class="contact-meta-value">
+                                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer">+91 79891 46193</a>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Chat on WhatsApp" style="padding: 6px 12px; color: #25D366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+
+                        <!-- Location Detail -->
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Location & Relocation</div>
+                                <div class="contact-meta-value">
+                                    1-32, Lam, Guntur, Andhra Pradesh, 522034
+                                </div>
+                                <div style="font-size: 0.84rem; color: var(--accent-cyan); margin-top: 4px;">
+                                    Open to Relocation across India & Remote Opportunities
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-globe"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Professional Profiles</div>
+                                <div class="social-pills" style="margin-top: 8px;">
+                                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modern Validated Interactive Form -->
+                    <div class="contact-form-panel">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 8px;">Send a Direct Message</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+                            Fill out the inquiry details below. I usually respond within 24 hours.
+                        </p>
+
+                        <form id="contactFormPage" action="https://formspree.io/f/mppznvld" method="POST" onsubmit="handleContactPageSubmit(event)">
+                            <input type="hidden" name="_subject" value="New Portfolio Inquiry - Contact Page">
+                            <div class="form-group">
+                                <label class="form-label" for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Anand Mahindra" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactEmail">Corporate or Personal Email *</label>
+                                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. name@organization.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactPhone">Contact Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactSubject">Inquiry Nature</label>
+                                <select id="contactSubject" name="subject" class="form-control" style="cursor: pointer;">
+                                    <option value="SAP ABAP Enterprise Role" style="background: var(--bg-secondary);">SAP ABAP Enterprise Role</option>
+                                    <option value="Technical Training / CIET Workshop" style="background: var(--bg-secondary);">Technical Training / Academic Workshop</option>
+                                    <option value="Frontend Project Consulting" style="background: var(--bg-secondary);">Frontend Project Consulting</option>
+                                    <option value="Full-Stack Web Development" style="background: var(--bg-secondary);">Full-Stack Web Development</option>
+                                    <option value="Other Inquiries" style="background: var(--bg-secondary);">Other Inquiries</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactMessage">Project Details / Message *</label>
+                                <textarea id="contactMessage" name="message" class="form-control" placeholder="Please describe the position, project scope, tech stack requirements, or questions..." required></textarea>
+                            </div>
+
+                            <button type="submit" id="contactPageSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                                <span>Submit Inquiries</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div id="pageFormStatus" class="form-message-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-badge">GG</div>
+                    <div class="brand-text">Ganesh<span>.dev</span></div>
+                </a>
+
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" style="color: var(--accent-cyan); font-weight: 600;"><i class="fas fa-file-download"></i> Resume</a></li>
+                </ul>
+
+                <div class="social-pills">
+                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gundapuneni Ganesh. Crafted with precision for enterprise UI/UX excellence.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>Back to Top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         WHATSAPP FLOATING TOGGLE
+         ========================================================================== -->
+    <a href="https://wa.me/917989146193?text=Hello%20Ganesh,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-toggle" 
+       aria-label="Chat on WhatsApp with Ganesh (+91 79891 46193)" 
+       title="Chat on WhatsApp (+91 79891 46193)">
+        <div class="whatsapp-toggle-btn">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-toggle-label">WhatsApp <span>+91 79891 46193</span></span>
+    </a>
+
+    <!-- ==========================================================================
+         INTERACTIVE JAVASCRIPT
+         ========================================================================== -->
+    <script>
+        // Form Submission Handler via Formspree AJAX
+        async function handleContactPageSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const statusBox = document.getElementById('pageFormStatus');
+            const submitBtn = document.getElementById('contactPageSubmitBtn');
+            const originalBtnContent = submitBtn.innerHTML;
+
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const phone = document.getElementById('contactPhone').value.trim();
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value.trim();
+
+            if (!name || !email || !phone || !message) {
+                statusBox.textContent = 'Please fill in all required fields.';
+                statusBox.className = 'form-message-status error';
+                statusBox.style.display = 'block';
+                return;
+            }
+
+            // Indicate loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending Message...</span> <i class="fas fa-spinner fa-spin"></i>';
+            statusBox.textContent = 'Sending your message to Ganesh...';
+            statusBox.className = 'form-message-status info';
+            statusBox.style.display = 'block';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://formspree.io/f/mppznvld', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    statusBox.textContent = `Thank you, ${name}! Your inquiry regarding "${subject}" has been successfully sent to Ganesh. I will reach out to you at ${email} shortly.`;
+                    statusBox.className = 'form-message-status success';
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnContent;
+                } else {
+                    // Formspree requires reCAPTCHA / human verification - seamlessly submit via standard browser POST
+                    statusBox.textContent = 'Verifying submission with Formspree...';
+                    statusBox.className = 'form-message-status info';
+                    HTMLFormElement.prototype.submit.call(form);
+                    return;
+                }
+            } catch (err) {
+                // If AJAX fetch is blocked by browser extensions or adblockers, fallback to standard HTML POST
+                console.warn('AJAX fetch prevented, submitting via standard HTML POST...', err);
+                HTMLFormElement.prototype.submit.call(form);
+                return;
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnContent;
+                }
+                setTimeout(() => {
+                    if (statusBox && statusBox.classList.contains('success')) {
+                        statusBox.style.display = 'none';
+                    }
+                }, 8000);
+            }
+        }
+
+        // Copy to clipboard helper
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHtml = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check" style="color: var(--accent-emerald);"></i>';
+                setTimeout(() => {
+                    btn.innerHTML = originalHtml;
+                }, 2000);
+            });
+        }
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

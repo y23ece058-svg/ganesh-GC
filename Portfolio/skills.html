@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical Skills & Competency Matrix of Gundapuneni Ganesh - Frontend Engineer & UI/UX Specialist. React, JavaScript, Node.js, Python, CSS3, and Design Systems.">
+    <title>Technical Skills Matrix | Gundapuneni Ganesh</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Enterprise Design System Stylesheet & Page Transitions -->
+    <link rel="stylesheet" href="one.css">
+    <script src="transitions.js" defer></script>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         STICKY NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="brand-logo" aria-label="Ganesh Portfolio Home">
+                <div class="brand-badge">GG</div>
+                <div class="brand-text">Ganesh<span>.dev</span></div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="mobile-resume-item"><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="nav-link" style="color: var(--accent-cyan);"><i class="fas fa-file-download"></i> Download Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-outline btn-sm resume-nav-btn" title="Download Official Resume (PDF)"><i class="fas fa-file-download"></i> <span>Resume</span></a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Let's Connect</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             SKILLS HEADER
+             ========================================================================== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Technical Arsenal</div>
+                    <h1 class="section-title">Comprehensive <span>Competency Matrix</span></h1>
+                    <p class="section-subtitle">
+                        An in-depth breakdown of engineering frameworks, development workflows, design tooling, and collaborative practices.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" onclick="filterSkillsPage('all', this)">All Competencies</button>
+                    <button class="tab-btn" onclick="filterSkillsPage('frontend', this)">Frontend & UI</button>
+                    <button class="tab-btn" onclick="filterSkillsPage('backend', this)">Backend & Data</button>
+                    <button class="tab-btn" onclick="filterSkillsPage('tools', this)">Tools & Architecture</button>
+                    <button class="tab-btn" onclick="filterSkillsPage('professional', this)">Professional Strengths</button>
+                </div>
+
+                <!-- Skills Grid Container -->
+                <div class="skills-grid-container" id="skillsGrid">
+                    <!-- HTML5 -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #E44D26;"><i class="fab fa-html5"></i></div>
+                                <div class="skill-name">HTML5 & Web Semantics</div>
+                            </div>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Accessible DOM tree, SEO meta standards, microdata, and web performance.</div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #1572B6;"><i class="fab fa-css3-alt"></i></div>
+                                <div class="skill-name">CSS3 & Design Tokens</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">CSS Grid, Flexbox, keyframe animations, glassmorphism, responsive queries.</div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #F7DF1E;"><i class="fab fa-js-square"></i></div>
+                                <div class="skill-name">JavaScript (ES6+)</div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Async/await, Promises, closures, DOM manipulation, functional paradigms.</div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #61DAFB;"><i class="fab fa-react"></i></div>
+                                <div class="skill-name">React</div>
+                            </div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Functional components, custom hooks, context API, state lifting, component lifecycle.</div>
+                    </div>
+
+                    <!-- Bootstrap 5 -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #7952B3;"><i class="fab fa-bootstrap"></i></div>
+                                <div class="skill-name">Bootstrap 5</div>
+                            </div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Rapid prototyping, 12-column grid system, utility classes, and accessible modals.</div>
+                    </div>
+
+                    <!-- UI/UX Systems -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #FF7262;"><i class="fas fa-pencil-ruler"></i></div>
+                                <div class="skill-name">UI/UX Design Systems</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">User journeys, wireframes, color theory, typographic hierarchy, micro-interactions.</div>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #68A063;"><i class="fab fa-node-js"></i></div>
+                                <div class="skill-name">Node.js & Express</div>
+                            </div>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Event-driven server architecture, routing, middleware, RESTful API endpoints.</div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #3776AB;"><i class="fab fa-python"></i></div>
+                                <div class="skill-name">Python</div>
+                            </div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Object-oriented programming, data structures, scripting, and automation.</div>
+                    </div>
+
+                    <!-- MongoDB -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #4DB33D;"><i class="fas fa-database"></i></div>
+                                <div class="skill-name">MongoDB (NoSQL)</div>
+                            </div>
+                            <span class="skill-pct">76%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 76%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Document schemas, aggregation pipelines, CRUD indexing, Mongoose integration.</div>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #00758F;"><i class="fas fa-table"></i></div>
+                                <div class="skill-name">SQL Databases</div>
+                            </div>
+                            <span class="skill-pct">74%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 74%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Relational schema design, table joins, transactions, query optimization.</div>
+                    </div>
+
+                    <!-- SAP ABAP (Certified 2026) -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-certificate"></i></div>
+                                <div class="skill-name">SAP ABAP (Certified 2026)</div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="skill-card-desc">ABAP Workbench, DDIC, internal tables, modularization, BAPIs, and enterprise ERP logic.</div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card-modern" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #F05032;"><i class="fab fa-git-alt"></i></div>
+                                <div class="skill-name">Git & Version Control</div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Branching strategies, pull requests, merge conflict resolution, CI/CD integration.</div>
+                    </div>
+
+                    <!-- REST APIs -->
+                    <div class="skill-card-modern" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #06b6d4;"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="skill-name">RESTful APIs & JSON</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">HTTP protocols, JSON serialization, Postman testing, error handling.</div>
+                    </div>
+
+                    <!-- Problem Solving -->
+                    <div class="skill-card-modern" data-category="professional">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #f59e0b;"><i class="fas fa-brain"></i></div>
+                                <div class="skill-name">Problem Solving & Logic</div>
+                            </div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Algorithmic thinking, root cause debugging, system profiling, edge case handling.</div>
+                    </div>
+
+                    <!-- Team Collaboration -->
+                    <div class="skill-card-modern" data-category="professional">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #10b981;"><i class="fas fa-users-cog"></i></div>
+                                <div class="skill-name">Agile Teamwork & Communication</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Sprint coordination, cross-functional alignment, peer code reviews, documentation.</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 60px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-primary" title="Download Official Resume (PDF)">
+                        <i class="fas fa-file-download"></i>
+                        <span>Download Full Resume (PDF)</span>
+                    </a>
+                    <a href="projects.html" class="btn btn-outline">
+                        <span>See These Skills in Action</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-badge">GG</div>
+                    <div class="brand-text">Ganesh<span>.dev</span></div>
+                </a>
+
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" style="color: var(--accent-cyan); font-weight: 600;"><i class="fas fa-file-download"></i> Resume</a></li>
+                </ul>
+
+                <div class="social-pills">
+                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gundapuneni Ganesh. Crafted with precision for enterprise UI/UX excellence.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>Back to Top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         WHATSAPP FLOATING TOGGLE
+         ========================================================================== -->
+    <a href="https://wa.me/917989146193?text=Hello%20Ganesh,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-toggle" 
+       aria-label="Chat on WhatsApp with Ganesh (+91 79891 46193)" 
+       title="Chat on WhatsApp (+91 79891 46193)">
+        <div class="whatsapp-toggle-btn">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-toggle-label">WhatsApp <span>+91 79891 46193</span></span>
+    </a>
+
+    <script>
+        // Skills Filter
+        function filterSkillsPage(category, btnElement) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            const cards = document.querySelectorAll('.skill-card-modern');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

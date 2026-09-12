@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gundapuneni Ganesh - Senior Frontend Engineer & UI/UX Specialist. Crafting high-performance, enterprise web applications and responsive design systems.">
+    <meta name="keywords" content="Frontend Developer, UI/UX Designer, React Developer, Web Developer, Gundapuneni Ganesh, Portfolio, TCS Enterprise UI/UX">
+    <meta name="author" content="Gundapuneni Ganesh">
+    <title>Gundapuneni Ganesh | Frontend Engineer & UI/UX Specialist</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Enterprise Design System Stylesheet & Page Transitions -->
+    <link rel="stylesheet" href="one.css">
+    <script src="transitions.js" defer></script>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         STICKY NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="brand-logo" aria-label="Ganesh Portfolio Home">
+                <div class="brand-badge">GG</div>
+                <div class="brand-text">Ganesh<span>.dev</span></div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="mobile-resume-item"><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="nav-link" style="color: var(--accent-cyan);"><i class="fas fa-file-download"></i> Download Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-outline btn-sm resume-nav-btn" title="Download Official Resume (PDF)"><i class="fas fa-file-download"></i> <span>Resume</span></a>
+                <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             HERO SECTION
+             ========================================================================== -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="status-badge">
+                            <span class="status-pulse"></span>
+                            Working Professional at TCS
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name-highlight">Gundapuneni Ganesh</span>
+                        </h1>
+                        
+                        <div class="hero-role">
+                            <i class="fas fa-layer-group"></i> SAP ABAP Developer &bull; CIET College Trainer &bull; Frontend Developer
+                        </div>
+                        
+                        <p class="hero-description">
+                            Certified SAP ABAP Developer (2026), Technical Trainer at CIET College and Frontend Developer. Passionate about enterprise ERP architectures, practical engineering mentorship, and building clean, responsive web applications.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-primary" title="Download Official Resume (PDF)">
+                                <i class="fas fa-file-arrow-down"></i>
+                                <span>Download Resume</span>
+                            </a>
+                            <a href="#projects" class="btn btn-outline">
+                                <span>Explore Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="social-pills">
+                            <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Repository" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" title="WhatsApp Chat" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:gundapuneniganesh321@gmail.com" class="social-pill" title="Send Email" aria-label="Email">
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-ring">
+                                <img src="profile-executive.png" alt="Gundapuneni Ganesh - SAP ABAP Developer & Frontend Engineer" class="avatar-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive Metrics Strip -->
+                <div class="metrics-strip">
+                    <div class="metric-item">
+                        <div class="metric-number">7+</div>
+                        <div class="metric-label">Completed Projects</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">Responsive & Accessible</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">99.8%</div>
+                        <div class="metric-label">Code Standards & Clean UI</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">5+</div>
+                        <div class="metric-label">Core Tech Stacks</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+             ABOUT SECTION
+             ========================================================================== -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Professional Background</div>
+                    <h2 class="section-title">SAP ABAP Developer, <span>CIET College Trainer</span> & Frontend Engineer</h2>
+                    <p class="section-subtitle">
+                        Uniting enterprise-grade SAP ABAP engineering, academic & technical training at CIET College, and modern frontend application development.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>About Gundapuneni Ganesh</h3>
+                        <p>
+                            I am a multi-disciplinary software professional combining enterprise <strong>SAP ABAP development (Certified in 2026)</strong>, active <strong>technical training at CIET College (Chalapathi Institute of Engineering & Technology, Guntur)</strong>, and modern <strong>frontend web development</strong>.
+                        </p>
+                        <p>
+                            As a Technical Trainer at CIET College, I mentor and train engineering students in programming fundamentals, practical coding paradigms, and industry-oriented technologies. Concurrently, I build enterprise SAP ABAP solutions (ABAP Workbench, DDIC, Reports) and architect high-performance, accessible frontend interfaces with React, modern JavaScript, and UI/UX design systems.
+                        </p>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px;">
+                            <a href="about.html" class="btn btn-outline btn-sm">
+                                <span>Read Full Biography</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-primary btn-sm" title="Download Official Resume (PDF)">
+                                <i class="fas fa-file-download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-icon" style="color: #38bdf8;"><i class="fas fa-certificate"></i></div>
+                            <h4 class="pillar-title">SAP ABAP (Certified 2026)</h4>
+                            <p class="pillar-desc">Enterprise ERP development, ABAP Workbench, Data Dictionary (DDIC) and internal table logic.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon" style="color: #10b981;"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <h4 class="pillar-title">CIET College Trainer</h4>
+                            <p class="pillar-desc">Mentoring future engineers at CIET College through hands-on coding labs, workshops, and project reviews.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fab fa-react"></i></div>
+                            <h4 class="pillar-title">Frontend Engineering</h4>
+                            <p class="pillar-desc">Developing component-driven React applications, modern ES6+ JavaScript, and responsive layouts.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-palette"></i></div>
+                            <h4 class="pillar-title">UI/UX & Clean Design</h4>
+                            <p class="pillar-desc">Mobile-first responsive architecture, accessible standards (WCAG 2.1), and clean maintainable code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+             SERVICES & CAPABILITIES
+             ========================================================================== -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">What I Deliver</div>
+                    <h2 class="section-title">Enterprise Capabilities & <span>Services</span></h2>
+                    <p class="section-subtitle">
+                        Specialized capabilities covering enterprise SAP ABAP engineering, academic and technical training at College, and modern frontend application development.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: SAP ABAP -->
+                    <div class="service-card">
+                        <div class="service-icon-box" style="color: #38bdf8;"><i class="fas fa-certificate"></i></div>
+                        <h3 class="service-title">SAP ABAP Enterprise Development</h3>
+                        <p class="service-desc">
+                            Officially certified in SAP ABAP in 2026. Delivering robust enterprise business logic, ABAP Workbench development, Data Dictionary (DDIC), and enterprise system integration.
+                        </p>
+                        <ul class="service-points">
+                            <li><i class="fas fa-check-circle"></i> Official SAP ABAP Certification (2026)</li>
+                            <li><i class="fas fa-check-circle"></i> DDIC, ABAP Objects, Internal Tables</li>
+                            <li><i class="fas fa-check-circle"></i> OOP'S, CDS Views, RAP & ODATA ....etc</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline btn-sm">Consult on SAP ABAP</a>
+                    </div>
+
+                    <!-- Service 2: Technical Training (CIET College) -->
+                    <div class="service-card">
+                        <div class="service-icon-box" style="color: #10b981;"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3 class="service-title">Technical Training & Mentorship</h3>
+                        <p class="service-desc">
+                            Active Technical Trainer at CIET College (Chalapathi Institute of Engineering & Technology). Mentoring engineering students in programming fundamentals and industry-ready coding.
+                        </p>
+                        <ul class="service-points">
+                            <li><i class="fas fa-check-circle"></i> Hands-on Technical Bootcamps</li>
+                            <li><i class="fas fa-check-circle"></i> Engineering Student Mentorship & Project Guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Software Engineering & Web Tech Curriculum</li>
+                        </ul>
+                        <div style="display: flex; gap: 10px; align-items: center; margin-top: auto; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-outline btn-sm">Inquire on Training</a>
+                            <a href="#teaching-trainer" class="btn btn-outline btn-sm" style="color: var(--accent-cyan); border-color: rgba(56, 189, 248, 0.35);">
+                                <i class="fas fa-chalkboard-teacher"></i> View Classroom
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Frontend Web Engineering & UI/UX -->
+                    <div class="service-card">
+                        <div class="service-icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="service-title">Frontend Web Engineering & UI/UX</h3>
+                        <p class="service-desc">
+                            Developing robust, maintainable client applications using React, modern JavaScript, HTML5 semantic markup, and optimized CSS3/Bootstrap layouts.
+                        </p>
+                        <ul class="service-points">
+                            <li><i class="fas fa-check-circle"></i> Single Page Applications (React / SPA)</li>
+                            <li><i class="fas fa-check-circle"></i> Fluid Mobile-First Responsive Layouts</li>
+                            <li><i class="fas fa-check-circle"></i> User-Centered UI/UX Design & Web Accessibility</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline btn-sm">Start a Project</a>
+                    </div>
+                </div>
+
+                <!-- ==========================================================
+                     TRAINER IN ACTION SPOTLIGHT (CIET COLLEGE)
+                     ========================================================== -->
+                <div class="trainer-spotlight-banner" id="teaching-trainer">
+                    <div class="trainer-spotlight-image-col">
+                        <div class="trainer-spotlight-frame">
+                            <img src="trainer-classroom.jpg" alt="Ganesh delivering live SAP ABAP training at CIET College interactive smartboard" class="trainer-spotlight-img" loading="lazy">
+                            <div class="trainer-live-tag">
+                                <span class="pulse-dot"></span> Live Classroom Lecture &bull; CIET College
+                            </div>
+                            <div class="trainer-screen-caption">
+                                <strong>Smartboard Topic:</strong> ABAP - Modularization Techniques & Function Modules (SE37)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-spotlight-content-col">
+                        <div class="eyebrow-badge" style="margin-bottom: 12px; display: inline-flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-chalkboard-teacher" style="color: #10b981;"></i> Teaching as a Trainer
+                        </div>
+                        <h3 style="font-size: 1.65rem; font-weight: 800; margin-bottom: 14px; color: var(--text-primary); line-height: 1.3;">
+                            Empowering Engineering Students with <span>Enterprise SAP & Software Skills</span>
+                        </h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 18px;">
+                            Active technical trainer at <strong>CIET College (Chalapathi Institute of Engineering & Technology)</strong>. Delivering hands-on engineering lectures covering <strong>SAP ABAP Modularization</strong>, Function Modules (SE37), Object-Oriented ABAP, and modern web application development.
+                        </p>
+                        <div class="trainer-highlights-grid">
+                            <div class="trainer-highlight-pill">
+                                <i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i>
+                                <span>ABAP Function Modules & Subroutines</span>
+                            </div>
+                            <div class="trainer-highlight-pill">
+                                <i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i>
+                                <span>Centrally Managed SE37 Architecture</span>
+                            </div>
+                            <div class="trainer-highlight-pill">
+                                <i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i>
+                                <span>Interactive Smartboard Demonstrations</span>
+                            </div>
+                            <div class="trainer-highlight-pill">
+                                <i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i>
+                                <span>Student Workstation Lab Mentoring</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 22px;">
+                            <a href="about.html#teaching-trainer" class="btn btn-primary btn-sm">
+                                <span>Explore Teaching Curriculum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-cyan); margin-right: 4px;"></i> CIET College, Lam, Guntur
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+             SKILLS SECTION
+             ========================================================================== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Technical Toolkit</div>
+                    <h2 class="section-title">Core Competencies & <span>Technologies</span></h2>
+                    <p class="section-subtitle">
+                        A curated suite of modern technologies and industry best practices refined for enterprise performance.
+                    </p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" onclick="filterSkills('all', this)">All Technologies</button>
+                    <button class="tab-btn" onclick="filterSkills('frontend', this)">Frontend & UI</button>
+                    <button class="tab-btn" onclick="filterSkills('backend', this)">Backend & DB</button>
+                    <button class="tab-btn" onclick="filterSkills('professional', this)">Professional Skills</button>
+                </div>
+
+                <div class="skills-grid-container" id="skillsContainer">
+                    <!-- HTML5 -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #E44D26;"><i class="fab fa-html5"></i></div>
+                                <div class="skill-name">HTML5</div>
+                            </div>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Semantic markup, SEO optimization, and accessible DOM structures.</div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #1572B6;"><i class="fab fa-css3-alt"></i></div>
+                                <div class="skill-name">CSS3 & Styling</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">CSS Grid, Flexbox, transitions, custom tokens, and Bootstrap 5.</div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #F7DF1E;"><i class="fab fa-js-square"></i></div>
+                                <div class="skill-name">JavaScript (ES6+)</div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Asynchronous programming, event loop, Promises, DOM manipulation.</div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #61DAFB;"><i class="fab fa-react"></i></div>
+                                <div class="skill-name">React</div>
+                            </div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Functional components, hooks, props, state management, and SPA routing.</div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #3776AB;"><i class="fab fa-python"></i></div>
+                                <div class="skill-name">Python</div>
+                            </div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Scripting, algorithmic problem solving, backend utility logic.</div>
+                    </div>
+
+                    <!-- MongoDB & SQL -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #4DB33D;"><i class="fas fa-database"></i></div>
+                                <div class="skill-name">MongoDB & SQL</div>
+                            </div>
+                            <span class="skill-pct">76%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 76%;"></div>
+                        </div>
+                        <div class="skill-card-desc">NoSQL document schemas, relational queries, and CRUD operations.</div>
+                    </div>
+
+                    <!-- SAP ABAP (Certified 2026) -->
+                    <div class="skill-card-modern" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-certificate"></i></div>
+                                <div class="skill-name">SAP ABAP (Certified 2026)</div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="skill-card-desc">ABAP Workbench, DDIC, internal tables, modularization and enterprise ERP logic.</div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="skill-card-modern" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #FF7262;"><i class="fas fa-pencil-ruler"></i></div>
+                                <div class="skill-name">UI/UX Design Systems</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Wireframing, typography scales, accessibility guidelines, Figma concepts.</div>
+                    </div>
+
+                    <!-- Problem Solving -->
+                    <div class="skill-card-modern" data-category="professional">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #f59e0b;"><i class="fas fa-lightbulb"></i></div>
+                                <div class="skill-name">Problem Solving</div>
+                            </div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Analytical debugging, performance profiling, and algorithmic efficiency.</div>
+                    </div>
+
+                    <!-- Team Collaboration -->
+                    <div class="skill-card-modern" data-category="professional">
+                        <div class="skill-header">
+                            <div class="skill-meta">
+                                <div class="skill-icon-wrap" style="color: #06b6d4;"><i class="fas fa-users"></i></div>
+                                <div class="skill-name">Agile Teamwork</div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="skill-card-desc">Cross-functional collaboration, code reviews, and Git version control.</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="skills.html" class="btn btn-outline">
+                        <span>Explore Comprehensive Skills Matrix</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+             PROJECTS SHOWCASE
+             ========================================================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Portfolio Showcase</div>
+                    <h2 class="section-title">Featured <span>Engineering Work</span></h2>
+                    <p class="section-subtitle">
+                        A selection of web applications highlighting interactive game design, API integration, and task management workflows.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Rock-Paper-Scissors -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <span class="project-badge-tag">Interactive Game</span>
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240724172741/a1-(2).gif" alt="Rock Paper Scissors Game Preview">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Interactive Rock-Paper-Scissors</h3>
+                            <p class="project-desc">
+                                A dynamic browser-based game implementing Game Theory probability, real-time score tracking, responsive animations, and streak calculations.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3 Grid</span>
+                                <span class="tech-tag">JavaScript ES6</span>
+                                <span class="tech-tag">DOM Manipulation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="projects.html#rps" class="project-btn">
+                                    <span>Case Study</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Real-Time Weather App -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <span class="project-badge-tag">REST API & Data</span>
+                            <img src="https://i.ytimg.com/vi/MIYQR-Ybrn4/maxresdefault.jpg" alt="Real-Time Weather App Preview">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Real-Time Weather Forecast</h3>
+                            <p class="project-desc">
+                                Meteorological dashboard delivering live weather data, temperature, humidity, wind speeds, and multi-day forecasting via external Weather API integration.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript Async/Await</span>
+                                <span class="tech-tag">RESTful API</span>
+                                <span class="tech-tag">JSON Parsing</span>
+                                <span class="tech-tag">Responsive UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="projects.html#weather" class="project-btn">
+                                    <span>Case Study</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart To-Do App -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <span class="project-badge-tag">Productivity Tool</span>
+                            <img src="https://i.pinimg.com/originals/ff/03/3d/ff033dc39574f5dfae4c91a5605f1120.gif" alt="Smart To-Do App Preview">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Smart Task & Productivity App</h3>
+                            <p class="project-desc">
+                                Task management application with full CRUD operations, priority filtering, local storage state persistence, and responsive UI for daily task organization.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                                <span class="tech-tag">CSS Flexbox</span>
+                                <span class="tech-tag">UI/UX Micro-Interactions</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="projects.html#todo" class="project-btn">
+                                    <span>Case Study</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>View All Projects & In-Depth Details</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+             CONTACT SECTION
+             ========================================================================== -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Connect & Inquire</div>
+                    <h2 class="section-title">Let's Discuss Your Next <span>Enterprise Project</span></h2>
+                    <p class="section-subtitle">
+                        Have an opportunity, consulting request, or project in mind? Reach out directly or fill out the communication form below.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Direct Contact Information -->
+                    <div class="contact-info-panel">
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Email Address</div>
+                                <div class="contact-meta-value">
+                                    <a href="mailto:gundapuneniganesh321@gmail.com">gundapuneniganesh321@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Mobile & WhatsApp</div>
+                                <div class="contact-meta-value">
+                                    <a href="tel:+917989146193">+91 79891 46193</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Location</div>
+                                <div class="contact-meta-value">
+                                    Guntur, Andhra Pradesh, India &bull; Open to Relocation
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="contact-meta-label">Professional Network</div>
+                                <div class="contact-meta-value">
+                                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer">linkedin.com/in/venkysykam</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Validated Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contactForm" action="https://formspree.io/f/mppznvld" method="POST" onsubmit="handleFormSubmit(event)">
+                            <input type="hidden" name="_subject" value="New Portfolio Inquiry - Home Page">
+                            <div class="form-group">
+                                <label class="form-label" for="userName">Your Full Name *</label>
+                                <input type="text" id="userName" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="userEmail">Email Address *</label>
+                                <input type="email" id="userEmail" name="email" class="form-control" placeholder="e.g. name@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="userPhone">Phone / Mobile Number *</label>
+                                <input type="tel" id="userPhone" name="phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="userMessage">Project Details or Inquiries *</label>
+                                <textarea id="userMessage" name="message" class="form-control" placeholder="Describe your requirements, timeline, or job opportunity..." required></textarea>
+                            </div>
+
+                            <button type="submit" id="homeFormSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div id="formStatus" class="form-message-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-badge">GG</div>
+                    <div class="brand-text">Ganesh<span>.dev</span></div>
+                </a>
+
+                <ul class="footer-nav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" style="color: var(--accent-cyan); font-weight: 600;"><i class="fas fa-file-download"></i> Resume</a></li>
+                </ul>
+
+                <div class="social-pills">
+                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gundapuneni Ganesh. Crafted with precision for enterprise UI/UX excellence.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>Back to Top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         WHATSAPP FLOATING TOGGLE
+         ========================================================================== -->
+    <a href="https://wa.me/917989146193?text=Hello%20Ganesh,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-toggle" 
+       aria-label="Chat on WhatsApp with Ganesh (+91 79891 46193)" 
+       title="Chat on WhatsApp (+91 79891 46193)">
+        <div class="whatsapp-toggle-btn">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-toggle-label">WhatsApp <span>+91 79891 46193</span></span>
+    </a>
+
+    <!-- ==========================================================================
+         INTERACTIVE JAVASCRIPT
+         ========================================================================== -->
+    <script>
+        // Mobile Navigation Drawer Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = navToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close mobile menu on clicking any link
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+        }
+
+        // Skills Filter Function
+        function filterSkills(category, btnElement) {
+            // Update active button state
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            // Filter cards
+            const cards = document.querySelectorAll('.skill-card-modern');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Contact Form Handling with Formspree AJAX & Feedback Toast
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('contactForm');
+            const statusBox = document.getElementById('formStatus');
+            const submitBtn = document.getElementById('homeFormSubmitBtn');
+            const originalBtnContent = submitBtn.innerHTML;
+            
+            const name = document.getElementById('userName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            const phone = document.getElementById('userPhone').value.trim();
+            const message = document.getElementById('userMessage').value.trim();
+
+            if (!name || !email || !phone || !message) {
+                statusBox.textContent = 'Please complete all required fields.';
+                statusBox.className = 'form-message-status error';
+                statusBox.style.display = 'block';
+                return;
+            }
+
+            // Indicate loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending Message...</span> <i class="fas fa-spinner fa-spin"></i>';
+            statusBox.textContent = 'Sending your message to Ganesh...';
+            statusBox.className = 'form-message-status info';
+            statusBox.style.display = 'block';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://formspree.io/f/mppznvld', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    statusBox.textContent = `Thank you, ${name}! Your inquiry has been successfully sent to Ganesh. I will respond to ${email} promptly.`;
+                    statusBox.className = 'form-message-status success';
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnContent;
+                } else {
+                    // Formspree requires reCAPTCHA / human verification - seamlessly submit via standard browser POST
+                    statusBox.textContent = 'Verifying submission with Formspree...';
+                    statusBox.className = 'form-message-status info';
+                    HTMLFormElement.prototype.submit.call(form);
+                    return;
+                }
+            } catch (err) {
+                // If AJAX fetch is blocked by browser extensions or adblockers, fallback to standard HTML POST
+                console.warn('AJAX fetch prevented, submitting via standard HTML POST...', err);
+                HTMLFormElement.prototype.submit.call(form);
+                return;
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnContent;
+                }
+                setTimeout(() => {
+                    if (statusBox && statusBox.classList.contains('success')) {
+                        statusBox.style.display = 'none';
+                    }
+                }, 8000);
+            }
+        }
+
+        // Navbar Scroll Styling & Active Link Tracking
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 40) {
+                navbar.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.4)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

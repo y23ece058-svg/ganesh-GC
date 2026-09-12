@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Engineering Projects and Case Studies by Gundapuneni Ganesh - Frontend Engineer & UI/UX Specialist. Rock-Paper-Scissors, Weather Dashboard, and Task Management.">
+    <title>Featured Projects & Case Studies | Gundapuneni Ganesh</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Enterprise Design System Stylesheet & Page Transitions -->
+    <link rel="stylesheet" href="one.css">
+    <script src="transitions.js" defer></script>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         STICKY NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="brand-logo" aria-label="Ganesh Portfolio Home">
+                <div class="brand-badge">GG</div>
+                <div class="brand-text">Ganesh<span>.dev</span></div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="mobile-resume-item"><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="nav-link" style="color: var(--accent-cyan);"><i class="fas fa-file-download"></i> Download Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" class="btn btn-outline btn-sm resume-nav-btn" title="Download Official Resume (PDF)"><i class="fas fa-file-download"></i> <span>Resume</span></a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Let's Connect</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             PROJECTS HEADER
+             ========================================================================== -->
+        <section class="section" style="padding-bottom: 40px;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-badge">Portfolio Case Studies</div>
+                    <h1 class="section-title">Selected <span>Engineering Projects</span></h1>
+                    <p class="section-subtitle">
+                        Architectural overviews, problem statements, and key implementations behind each production-grade application.
+                    </p>
+                </div>
+
+                <!-- Case Study 1: Rock-Paper-Scissors -->
+                <article class="about-card" id="rps" style="margin-bottom: 40px; padding: 40px;">
+                    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center;">
+                        <div>
+                            <span class="project-badge-tag" style="position: static; display: inline-block; margin-bottom: 16px;">Interactive Game Simulation</span>
+                            <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 14px;">
+                                Interactive Rock-Paper-Scissors Platform
+                            </h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 18px;">
+                                An interactive, responsive game application implementing Game Theory algorithms, pseudo-random decision engines, and real-time state tracking. Players compete against an adaptive computerized opponent with instant scoring updates and visual feedback.
+                            </p>
+
+                            <div style="margin-bottom: 20px;">
+                                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 8px;">Key Architectural Highlights:</h4>
+                                <ul class="service-points" style="margin-bottom: 0;">
+                                    <li><i class="fas fa-check-circle"></i> Clean state management for win/loss/tie streaks and cumulative scores.</li>
+                                    <li><i class="fas fa-check-circle"></i> Keyframe animations providing responsive visual feedback on selection.</li>
+                                    <li><i class="fas fa-check-circle"></i> Pure vanilla JavaScript ES6 architecture with zero heavy library overhead.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3 Keyframes</span>
+                                <span class="tech-tag">JavaScript ES6</span>
+                                <span class="tech-tag">Game Logic</span>
+                            </div>
+
+                            <div style="display: flex; gap: 14px; margin-top: 24px;">
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="contact.html" class="btn btn-outline btn-sm">
+                                    <span>Inquire Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md);">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240724172741/a1-(2).gif" alt="Rock Paper Scissors Simulation" style="width: 100%; height: 320px; object-fit: cover;">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 2: Weather App -->
+                <article class="about-card" id="weather" style="margin-bottom: 40px; padding: 40px;">
+                    <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 40px; align-items: center;">
+                        <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md);">
+                            <img src="https://i.ytimg.com/vi/MIYQR-Ybrn4/maxresdefault.jpg" alt="Weather Forecast Application" style="width: 100%; height: 320px; object-fit: cover;">
+                        </div>
+
+                        <div>
+                            <span class="project-badge-tag" style="position: static; display: inline-block; margin-bottom: 16px;">REST API & Real-Time Data</span>
+                            <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 14px;">
+                                Real-Time Weather Forecast Dashboard
+                            </h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 18px;">
+                                A data-driven meteorological dashboard connected to external weather provider APIs. Users can query real-time meteorological metrics for any global city or leverage browser geolocation for local forecasts.
+                            </p>
+
+                            <div style="margin-bottom: 20px;">
+                                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 8px;">Key Architectural Highlights:</h4>
+                                <ul class="service-points" style="margin-bottom: 0;">
+                                    <li><i class="fas fa-check-circle"></i> Asynchronous HTTP requests using <code>fetch()</code> and <code>async/await</code>.</li>
+                                    <li><i class="fas fa-check-circle"></i> Robust error boundaries handling network timeouts and unknown city inputs.</li>
+                                    <li><i class="fas fa-check-circle"></i> Dynamic UI rendering of temperature, humidity, wind velocity, and icons.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">RESTful API</span>
+                                <span class="tech-tag">Async/Await</span>
+                                <span class="tech-tag">JSON Parsing</span>
+                                <span class="tech-tag">Responsive UI</span>
+                            </div>
+
+                            <div style="display: flex; gap: 14px; margin-top: 24px;">
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="contact.html" class="btn btn-outline btn-sm">
+                                    <span>Inquire Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 3: To-Do App -->
+                <article class="about-card" id="todo" style="margin-bottom: 40px; padding: 40px;">
+                    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center;">
+                        <div>
+                            <span class="project-badge-tag" style="position: static; display: inline-block; margin-bottom: 16px;">Productivity & State Management</span>
+                            <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 14px;">
+                                Smart Task & Productivity Management App
+                            </h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 18px;">
+                                An ergonomic productivity suite designed to organize daily workflows. Features complete Create-Read-Update-Delete (CRUD) capabilities, priority tagging, status filters (All, Active, Completed), and offline data persistence.
+                            </p>
+
+                            <div style="margin-bottom: 20px;">
+                                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 8px;">Key Architectural Highlights:</h4>
+                                <ul class="service-points" style="margin-bottom: 0;">
+                                    <li><i class="fas fa-check-circle"></i> Browser <code>localStorage</code> synchronization ensuring zero data loss on refresh.</li>
+                                    <li><i class="fas fa-check-circle"></i> Filter logic separating active items from completed milestones.</li>
+                                    <li><i class="fas fa-check-circle"></i> Accessible keyboard event listeners for rapid task entry (Enter key binding).</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage API</span>
+                                <span class="tech-tag">CSS Flexbox</span>
+                                <span class="tech-tag">CRUD Architecture</span>
+                            </div>
+
+                            <div style="display: flex; gap: 14px; margin-top: 24px;">
+                                <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="contact.html" class="btn btn-outline btn-sm">
+                                    <span>Inquire Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md);">
+                            <img src="https://i.pinimg.com/originals/ff/03/3d/ff033dc39574f5dfae4c91a5605f1120.gif" alt="Smart Task Manager Preview" style="width: 100%; height: 320px; object-fit: cover;">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             BOTTOM CTA
+             ========================================================================== -->
+        <section class="section" style="background: var(--bg-surface); padding: 70px 0;">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 16px;">Have a Specialized Project in Mind?</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 30px; font-size: 1.05rem;">
+                    From conceptual wireframes to high-performance frontend code, I can help bring your digital vision to reality.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Initiate Discussion</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="skills.html" class="btn btn-outline">
+                        <span>Review Tech Stack</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-badge">GG</div>
+                    <div class="brand-text">Ganesh<span>.dev</span></div>
+                </a>
+
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Ganesh_Resume.pdf" download="Ganesh_Resume.pdf" style="color: var(--accent-cyan); font-weight: 600;"><i class="fas fa-file-download"></i> Resume</a></li>
+                </ul>
+
+                <div class="social-pills">
+                    <a href="https://www.linkedin.com/in/venkysykam" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Gundapuneni-Ganesh" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/917989146193" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gundapuneni Ganesh. Crafted with precision for enterprise UI/UX excellence.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>Back to Top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         WHATSAPP FLOATING TOGGLE
+         ========================================================================== -->
+    <a href="https://wa.me/917989146193?text=Hello%20Ganesh,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-toggle" 
+       aria-label="Chat on WhatsApp with Ganesh (+91 79891 46193)" 
+       title="Chat on WhatsApp (+91 79891 46193)">
+        <div class="whatsapp-toggle-btn">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-toggle-label">WhatsApp <span>+91 79891 46193</span></span>
+    </a>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
